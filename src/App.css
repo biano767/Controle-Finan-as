@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+body.dark-mode h1,
+body.dark-mode .balance,
+body.dark-mode form,
+body.dark-mode label,
+body.dark-mode .transactions li,
+body.dark-mode input,
+body.dark-mode select {
+    color: #ffffff;
+    background-color: #2d2d2d;
+    border-color: #555;
+}
+
+.App {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.App.dark-mode {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+.header-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    width: auto;
+}
+
+.clear-btn {
+    background: #dc3545;
+    width: auto;
+    margin-left: 10px;
+}
+
+.clear-btn:hover {
+    background: #c82333;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+.balance {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background: #1a252f;
+}
+
+.transactions {
+    margin-top: 20px;
+}
+
+.transactions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.transactions li {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.transactions .income {
+    background: #d4edda;
+    border-left: 5px solid #28a745;
+}
+
+.transactions .expense {
+    background: #f8d7da;
+    border-left: 5px solid #dc3545;
+}
